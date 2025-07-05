@@ -40,93 +40,7 @@
 
 
     <!-- header area -->
-    <header class="header">
-
-        <!-- header top -->
-        <div class="header-top">
-            <div class="container">
-                <div class="header-top-wrap">
-                    <div class="header-top-left">
-                        <div class="header-top-list">
-                            <ul>
-                                <li><a href="mailto:info@mercure-logistics.com"><i class="far fa-envelopes"></i> info@mercure-logistics.com</a></li>
-                                <li><a href="tel:+242066661111"><i class="far fa-phone-volume"></i> +242 06 666 11 11</a></li>
-                                <li><a href="#"><i class="far fa-alarm-clock"></i> Lun - Ven (07H30 - 17H30)</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="header-top-right">
-                        <div class="header-top-list">
-                            <a href="login.html"><i class="far fa-sign-in"></i> Connexion</a>
-                        </div>
-                        <div class="header-top-lang">
-                            <div class="dropdown">
-                                <a href="#" class="top-lang dropdown-toggle" data-bs-toggle="dropdown"><i class="fal fa-globe"></i> Fr</a>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="#">Français</a></li>
-                                    <li><a class="dropdown-item" href="#">English</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="header-top-social">
-                            <span>Suivez-nous: </span>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- header top end -->
-
-        <!-- navbar -->
-        <div class="main-navigation">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container position-relative">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo/logo.png" alt="MLC Logo">
-                    </a>
-                    <div class="mobile-menu-right">
-                        <div class="mobile-menu-btn">
-                            <button type="button" class="nav-right-link search-box-outer"><i class="far fa-search"></i></button>
-                        </div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarPopup" aria-controls="sidebarPopup">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">À Propos</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Services</a>
-                                <ul class="dropdown-menu fade-down">
-                                    <li><a class="dropdown-item" href="service-single.html?service=fluvial">Transport Fluvial</a></li>
-                                    <li><a class="dropdown-item" href="service-single.html?service=multimodal">Transport Multimodal</a></li>
-                                    <li><a class="dropdown-item" href="service-single.html?service=logistique">Logistique Portuaire</a></li>
-                                    <li><a class="dropdown-item" href="service-single.html?service=douanes">Formalités Douanières</a></li>
-                                    <li><a class="dropdown-item" href="service-single.html?service=entreposage">Entreposage</a></li>
-                                    <li><a class="dropdown-item" href="service-single.html?service=routier">Transport Routier</a></li>
-                                    <li><a class="dropdown-item" href="service-single.html?service=commissionnaire">Commissionnaire Transport</a></li>
-                                    <li><a class="dropdown-item" href="service-single.html?service=projet">Projet Cargo</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                        <div class="nav-right">
-                            <div class="nav-right-btn">
-                                <a href="#" class="theme-btn"><span class="fal fa-paper-plane"></span>Demande de Devis</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <!-- navbar end-->
-
-    </header>
+    <div id="header-placeholder"></div>
     <!-- header area end -->
 
 
@@ -240,8 +154,8 @@
                                 <div class="widget">
                                     <h4 class="title">Téléchargements</h4>
                                     <div class="service-download">
-                                        <a href="#"><i class="far fa-file-pdf"></i> SOP Transit</a> 
-                                        <a href="#"><i class="far fa-file-alt"></i> Brochure Services</a> 
+                                        <a href="assets/sop_transit_mlc.pdf"><i class="far fa-file-pdf"></i> SOP Transit</a> 
+                                        <a href="assets/chemise_cartonnée.pdf"><i class="far fa-file-alt"></i> Brochure Services</a> 
                                     </div>
                                 </div>
                                 <div class="widget">
@@ -429,6 +343,9 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/ai-chat.js"></script>
+    <script src="assets/js/include-header-script.js"></script>
+    <script src="assets/js/header-include.js"></script>
+
 
     <script>
         // Services data based on MLC information
@@ -439,12 +356,14 @@
                     <h3 class="mb-20">Transport Fluvial</h3>
                     <p class="mb-20">
                         MLC offre des services d'affrètement de bateaux sur l'axe fluvial Brazzaville-Bangui, Brazzaville-Kinshasa, Bétou-Impfondo. 
-                        Nous proposons des services d'affrètement complet ou partiel. Nos experts en services d'affrètement fluviale prendront en charge 
+                        Nous assurons par nos propres barges le transport fluvial entre les ports principaux du Congo et des pays limitrophes. 
+                        Nous proposons des services d'affrètement complet ou partiel. Nos experts en services d'affrètement fluvial prendront en charge 
                         toutes les étapes du processus du début à la fin.
                     </p>
                     <p class="mb-20">
                         Fiable, sûr et économique, le transport fluvial possède toutes les caractéristiques d'un transport moderne. Il permet ainsi 
-                        d'acheminer de grandes capacités, en toute sécurité et dans le respect de l'environnement.
+                        d'acheminer de grandes capacités, en toute sécurité et dans le respect de l'environnement. Exploitez les voies navigables avec notre service de transport fluvial, 
+                        offrant une alternative efficace pour le mouvement de marchandises dans les régions accessibles par les cours d'eau.
                     </p>
                     <div class="my-4">
                         <h4 class="mb-3">Nos Avantages</h4>
@@ -454,6 +373,20 @@
                             <li><i class="far fa-check-double"></i>Sécurité optimale</li>
                             <li><i class="far fa-check-double"></i>Affrètement complet ou partiel</li>
                             <li><i class="far fa-check-double"></i>Équipement adapté selon le type de produits</li>
+                            <li><i class="far fa-check-double"></i>Coûts de transport réduits</li>
+                            <li><i class="far fa-check-double"></i>Flotte de barges dédiée</li>
+                            <li><i class="far fa-check-double"></i>Expertise dans la navigation fluviale</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Nos Services Fluviaux</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Transport de marchandises générales</li>
+                            <li><i class="far fa-check-double"></i>Transport de conteneurs</li>
+                            <li><i class="far fa-check-double"></i>Transport de produits pétroliers</li>
+                            <li><i class="far fa-check-double"></i>Transport de matériaux de construction</li>
+                            <li><i class="far fa-check-double"></i>Transport de produits agricoles</li>
+                            <li><i class="far fa-check-double"></i>Affrètement de barges</li>
                         </ul>
                     </div>
                     <div class="my-4">
@@ -462,6 +395,7 @@
                             <li><i class="far fa-ship"></i>Brazzaville - Bangui</li>
                             <li><i class="far fa-ship"></i>Brazzaville - Kinshasa</li>
                             <li><i class="far fa-ship"></i>Bétou - Impfondo</li>
+                            <li><i class="far fa-ship"></i>Autres axes fluviaux d'Afrique Centrale</li>
                         </ul>
                     </div>
                 `
@@ -471,13 +405,15 @@
                 content: `
                     <h3 class="mb-20">Transport Multimodal</h3>
                     <p class="mb-20">
-                        MLC propose à ses clients des solutions de transport multimodal. Ce type de transport nous permet de conserver la même unité 
+                        MLC propose à ses clients des solutions de transport multimodal intégrées et efficaces. Ce type de transport nous permet de conserver la même unité 
                         de chargement et le transfert des conteneurs se fait sans rupture de charge, ce qui limite grandement les risques d'accidents, 
-                        de casse et de vol.
+                        de casse et de vol. Notre expertise dans la coordination des différents modes de transport garantit une chaîne logistique fluide et optimisée.
                     </p>
                     <p class="mb-20">
-                        Avec une gestion des flux par voie fluviale, ferroviaire, associé à un transport routier on fait parvenir la marchandise à 
-                        destination, en assurant un service porte-à-porte.
+                        Avec une gestion des flux par voie fluviale, ferroviaire, associé à un transport routier, nous faisons parvenir la marchandise à 
+                        destination, en assurant un service porte-à-porte complet. Notre approche multimodale unique combine harmonieusement différents services, 
+                        offrant une flexibilité maximale pour répondre aux exigences spécifiques de votre chaîne d'approvisionnement et garantir une livraison 
+                        dans les délais les plus brefs.
                     </p>
                     <div class="my-4">
                         <h4 class="mb-3">Nos Solutions</h4>
@@ -488,6 +424,30 @@
                             <li><i class="far fa-check-double"></i>Optimisation des coûts</li>
                             <li><i class="far fa-check-double"></i>Sécurité accrue des marchandises</li>
                             <li><i class="far fa-check-double"></i>Cargaisons surdimensionnées et de projet</li>
+                            <li><i class="far fa-check-double"></i>Gestion complète de la chaîne d'approvisionnement</li>
+                            <li><i class="far fa-check-double"></i>Suivi en temps réel des expéditions</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Nos Combinaisons Multimodales</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Route-Rail</li>
+                            <li><i class="far fa-check-double"></i>Route-Fleuve</li>
+                            <li><i class="far fa-check-double"></i>Rail-Fleuve</li>
+                            <li><i class="far fa-check-double"></i>Mer-Rail-Route</li>
+                            <li><i class="far fa-check-double"></i>Air-Route</li>
+                            <li><i class="far fa-check-double"></i>Solutions personnalisées selon vos besoins</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Nos Avantages</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Interlocuteur unique pour toute la chaîne logistique</li>
+                            <li><i class="far fa-check-double"></i>Réduction de l'empreinte carbone</li>
+                            <li><i class="far fa-check-double"></i>Flexibilité et adaptabilité</li>
+                            <li><i class="far fa-check-double"></i>Expertise dans tous les modes de transport</li>
+                            <li><i class="far fa-check-double"></i>Coordination centralisée des opérations</li>
+                            <li><i class="far fa-check-double"></i>Rapports personnalisés sur vos expéditions</li>
                         </ul>
                     </div>
                 `
@@ -497,23 +457,39 @@
                 content: `
                     <h3 class="mb-20">Logistique Portuaire</h3>
                     <p class="mb-20">
-                        MLC met à la disposition des clients des solutions logistiques portuaires qui répondent à leurs besoins et exigences en matière de : 
-                        manutention, transbordement, douane, transit, stockage, consignation, commission de transport et affrètement maritime / fluvial / aérien / ferroviaire / routier.
+                        MLC est un acteur majeur de la logistique portuaire au Congo. Nous offrons une gamme complète de services 
+                        pour faciliter le transit de vos marchandises dans les ports congolais, notamment à Pointe-Noire, principal port en eau profonde 
+                        de la région. Notre expertise portuaire garantit une gestion efficace et sécurisée de vos opérations maritimes.
                     </p>
                     <p class="mb-20">
-                        Grâce au professionnalisme et au savoir-faire spécifique de notre agence et de nos équipes, nous proposons à nos clients des services 
-                        et activités portuaires dédiés aux navires et aux marchandises.
+                        Grâce à notre présence permanente dans les zones portuaires et à nos relations privilégiées avec les autorités portuaires, 
+                        nous assurons un traitement rapide et fluide de vos marchandises. Notre équipe dédiée coordonne l'ensemble des opérations, 
+                        de l'arrivée du navire jusqu'à la sortie des marchandises du port.
                     </p>
                     <div class="my-4">
-                        <h4 class="mb-3">Services Portuaires</h4>
+                        <h4 class="mb-3">Nos Services Portuaires</h4>
                         <ul class="list">
                             <li><i class="far fa-check-double"></i>Manutention portuaire</li>
-                            <li><i class="far fa-check-double"></i>Transbordement</li>
-                            <li><i class="far fa-check-double"></i>Transit et stockage</li>
-                            <li><i class="far fa-check-double"></i>Consignation</li>
-                            <li><i class="far fa-check-double"></i>Commission de transport</li>
-                            <li><i class="far fa-check-double"></i>Affrètement tous modes</li>
-                            <li><i class="far fa-check-double"></i>Marchandises dangereuses</li>
+                            <li><i class="far fa-check-double"></i>Consignation maritime</li>
+                            <li><i class="far fa-check-double"></i>Gestion des conteneurs</li>
+                            <li><i class="far fa-check-double"></i>Entreposage portuaire</li>
+                            <li><i class="far fa-check-double"></i>Transit portuaire</li>
+                            <li><i class="far fa-check-double"></i>Coordination des opérations</li>
+                            <li><i class="far fa-check-double"></i>Arrimage et désarrimage</li>
+                            <li><i class="far fa-check-double"></i>Empotage et dépotage</li>
+                            <li><i class="far fa-check-double"></i>Suivi des navires</li>
+                            <li><i class="far fa-check-double"></i>Gestion des escales</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Nos Avantages</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Présence permanente dans les zones portuaires</li>
+                            <li><i class="far fa-check-double"></i>Relations privilégiées avec les autorités portuaires</li>
+                            <li><i class="far fa-check-double"></i>Équipements de manutention spécialisés</li>
+                            <li><i class="far fa-check-double"></i>Personnel qualifié et expérimenté</li>
+                            <li><i class="far fa-check-double"></i>Suivi en temps réel des opérations</li>
+                            <li><i class="far fa-check-double"></i>Solutions sur mesure pour tous types de marchandises</li>
                         </ul>
                     </div>
                 `
@@ -523,22 +499,37 @@
                 content: `
                     <h3 class="mb-20">Formalités Douanières</h3>
                     <p class="mb-20">
-                        Nous proposons un panel de solutions douanières haut de gamme. Nous offrons un service complet de gestion des formalités douanières, 
-                        appuyé par un service douanier de niveau élevé et un système d'information performant.
+                        MLC est un commissionnaire en douane agréé qui vous accompagne dans toutes vos démarches douanières. 
+                        Nous vous proposons un service complet pour faciliter vos opérations d'import-export et garantir la conformité 
+                        de vos transactions avec les réglementations en vigueur.
                     </p>
                     <p class="mb-20">
-                        Notre équipe d'experts est capable de gérer d'une manière planifiée et structurée les services et d'accélérer le processus de dédouanement. 
-                        Nous assurons le dédouanement des différents types de marchandises, y compris les matières dangereuses et les marchandises surdimensionnées.
+                        Notre équipe d'experts en douane possède une connaissance approfondie des procédures douanières locales et internationales, 
+                        vous permettant de bénéficier d'un dédouanement rapide et efficace de vos marchandises. Nous nous engageons à optimiser 
+                        vos coûts tout en assurant la conformité réglementaire.
                     </p>
                     <div class="my-4">
-                        <h4 class="mb-3">Nos Expertises</h4>
+                        <h4 class="mb-3">Nos Services Douaniers</h4>
                         <ul class="list">
-                            <li><i class="far fa-check-double"></i>Gestion complète des formalités douanières</li>
-                            <li><i class="far fa-check-double"></i>Système d'information performant</li>
-                            <li><i class="far fa-check-double"></i>Équipe d'experts spécialisés</li>
-                            <li><i class="far fa-check-double"></i>Dédouanement matières dangereuses</li>
-                            <li><i class="far fa-check-double"></i>Marchandises surdimensionnées</li>
-                            <li><i class="far fa-check-double"></i>Processus accéléré</li>
+                            <li><i class="far fa-check-double"></i>Déclaration en douane</li>
+                            <li><i class="far fa-check-double"></i>Conseil en réglementation douanière</li>
+                            <li><i class="far fa-check-double"></i>Obtention de licences et permis</li>
+                            <li><i class="far fa-check-double"></i>Gestion des documents d'importation/exportation</li>
+                            <li><i class="far fa-check-double"></i>Représentation auprès des autorités douanières</li>
+                            <li><i class="far fa-check-double"></i>Optimisation des coûts douaniers</li>
+                            <li><i class="far fa-check-double"></i>Classification tarifaire des marchandises</li>
+                            <li><i class="far fa-check-double"></i>Gestion des régimes douaniers spécifiques</li>
+                            <li><i class="far fa-check-double"></i>Assistance en cas de contrôle douanier</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Nos Avantages</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Expertise locale et internationale</li>
+                            <li><i class="far fa-check-double"></i>Dédouanement rapide et efficace</li>
+                            <li><i class="far fa-check-double"></i>Réduction des risques de non-conformité</li>
+                            <li><i class="far fa-check-double"></i>Optimisation fiscale et douanière</li>
+                            <li><i class="far fa-check-double"></i>Suivi personnalisé de vos dossiers</li>
                         </ul>
                     </div>
                 `
@@ -548,22 +539,39 @@
                 content: `
                     <h3 class="mb-20">Entreposage</h3>
                     <p class="mb-20">
-                        Nous disposons de 5 entrepôts de superficie totale de 20 000 m² situés dans la première zone portuaire et nous proposons des solutions 
-                        complètes d'entreposage. Nos entrepôts de stockage sont pour tout type de marchandise générale.
+                        MLC dispose d'entrepôts modernes et sécurisés pour répondre à tous vos besoins de stockage. 
+                        Nos installations sont équipées des dernières technologies pour assurer la sécurité et la traçabilité de vos marchandises.
+                        Avec une superficie totale de plus de 10 000 m², nos entrepôts offrent des solutions adaptées à tous types de produits, 
+                        y compris les marchandises sensibles nécessitant des conditions spécifiques.
                     </p>
                     <p class="mb-20">
-                        Nous assurons la réception, le stockage et l'expédition des marchandises, quelles qu'elles soient (vrac, colis de grande taille, conteneur, etc.) 
-                        et en assurent la sécurité.
+                        Notre système de gestion d'entrepôt (WMS) permet un suivi précis et en temps réel de vos stocks. 
+                        Nous proposons également des services à valeur ajoutée pour optimiser votre chaîne logistique et réduire vos coûts opérationnels.
                     </p>
                     <div class="my-4">
-                        <h4 class="mb-3">Nos Installations</h4>
+                        <h4 class="mb-3">Nos Services d'Entreposage</h4>
                         <ul class="list">
-                            <li><i class="far fa-check-double"></i>5 entrepôts - 20 000 m² total</li>
-                            <li><i class="far fa-check-double"></i>Première zone portuaire</li>
-                            <li><i class="far fa-check-double"></i>Tout type de marchandise générale</li>
-                            <li><i class="far fa-check-double"></i>Réception, stockage, expédition</li>
-                            <li><i class="far fa-check-double"></i>Sécurité assurée</li>
-                            <li><i class="far fa-check-double"></i>Entrepôt sous douane disponible</li>
+                            <li><i class="far fa-check-double"></i>Stockage courte et longue durée</li>
+                            <li><i class="far fa-check-double"></i>Gestion des stocks</li>
+                            <li><i class="far fa-check-double"></i>Préparation de commandes</li>
+                            <li><i class="far fa-check-double"></i>Emballage et étiquetage</li>
+                            <li><i class="far fa-check-double"></i>Distribution</li>
+                            <li><i class="far fa-check-double"></i>Suivi en temps réel</li>
+                            <li><i class="far fa-check-double"></i>Stockage de marchandises dangereuses</li>
+                            <li><i class="far fa-check-double"></i>Gestion des inventaires</li>
+                            <li><i class="far fa-check-double"></i>Cross-docking</li>
+                            <li><i class="far fa-check-double"></i>Contrôle qualité</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Nos Infrastructures</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Entrepôts sécurisés 24/7</li>
+                            <li><i class="far fa-check-double"></i>Zones de stockage spécialisées</li>
+                            <li><i class="far fa-check-double"></i>Équipements de manutention modernes</li>
+                            <li><i class="far fa-check-double"></i>Système de gestion d'entrepôt (WMS)</li>
+                            <li><i class="far fa-check-double"></i>Surveillance par caméra</li>
+                            <li><i class="far fa-check-double"></i>Accès contrôlé</li>
                         </ul>
                     </div>
                 `
@@ -573,23 +581,49 @@
                 content: `
                     <h3 class="mb-20">Transport Routier</h3>
                     <p class="mb-20">
-                        Avec notre propre flotte de camions modernes nous fournissons une qualité supérieure en terme de service et de fiabilité. 
-                        Dans un souci de livraison à temps et d'un service client exceptionnel, nous nous efforçons d'optimiser les services de transport routier 
-                        pour assurer un transport fluide de la cargaison de nos clients.
+                        MLC dispose d'une flotte moderne de véhicules pour assurer le transport de vos marchandises en toute sécurité. 
+                        Nos chauffeurs expérimentés connaissent parfaitement les routes et les réglementations locales, garantissant une livraison 
+                        ponctuelle et sécurisée de vos marchandises à travers le Congo et les pays limitrophes.
                     </p>
                     <p class="mb-20">
-                        MLC propose toujours les solutions les plus efficaces pour répondre aux besoins de transport routier national et international de nos clients. 
-                        Nous respectons toutes les exigences légales pour les transports nationaux et disposons des certificats et autorisations nécessaires.
+                        Notre flotte diversifiée comprend des camions de différentes capacités, des véhicules spécialisés pour le transport de 
+                        marchandises dangereuses et des équipements pour le transport exceptionnel. Tous nos véhicules sont équipés de systèmes 
+                        de géolocalisation permettant un suivi en temps réel de vos expéditions.
                     </p>
+                    <div class="my-4">
+                        <h4 class="mb-3">Nos Services de Transport Routier</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Transport national et international</li>
+                            <li><i class="far fa-check-double"></i>Transport de marchandises générales</li>
+                            <li><i class="far fa-check-double"></i>Transport de marchandises dangereuses</li>
+                            <li><i class="far fa-check-double"></i>Transport exceptionnel</li>
+                            <li><i class="far fa-check-double"></i>Livraison express</li>
+                            <li><i class="far fa-check-double"></i>Suivi en temps réel</li>
+                            <li><i class="far fa-check-double"></i>Transport de conteneurs</li>
+                            <li><i class="far fa-check-double"></i>Transport frigorifique</li>
+                            <li><i class="far fa-check-double"></i>Distribution urbaine</li>
+                            <li><i class="far fa-check-double"></i>Navettes inter-sites</li>
+                        </ul>
+                    </div>
                     <div class="my-4">
                         <h4 class="mb-3">Notre Flotte</h4>
                         <ul class="list">
-                            <li><i class="far fa-check-double"></i>Flotte de camions modernes</li>
-                            <li><i class="far fa-check-double"></i>Service et fiabilité supérieurs</li>
-                            <li><i class="far fa-check-double"></i>Livraison à temps garantie</li>
-                            <li><i class="far fa-check-double"></i>Transport national et international</li>
-                            <li><i class="far fa-check-double"></i>Certificats et autorisations</li>
-                            <li><i class="far fa-check-double"></i>Gestion de chaîne d'approvisionnement</li>
+                            <li><i class="far fa-check-double"></i>Camions porteurs de différentes capacités</li>
+                            <li><i class="far fa-check-double"></i>Tracteurs routiers avec semi-remorques</li>
+                            <li><i class="far fa-check-double"></i>Véhicules spécialisés ADR</li>
+                            <li><i class="far fa-check-double"></i>Camions plateau pour charges lourdes</li>
+                            <li><i class="far fa-check-double"></i>Véhicules de livraison urbaine</li>
+                            <li><i class="far fa-check-double"></i>Équipements de manutention</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Axes Desservis</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Pointe-Noire - Brazzaville</li>
+                            <li><i class="far fa-check-double"></i>Congo - RDC</li>
+                            <li><i class="far fa-check-double"></i>Congo - Cameroun</li>
+                            <li><i class="far fa-check-double"></i>Congo - Gabon</li>
+                            <li><i class="far fa-check-double"></i>Desserte nationale complète</li>
                         </ul>
                     </div>
                 `
@@ -600,11 +634,14 @@
                     <h3 class="mb-20">Commissionnaire des Transports - Frêt Aérien</h3>
                     <p class="mb-20">
                         MLC propose des solutions de transport aérien personnalisées et adaptées à chaque client. Nous garantissons un service de haute qualité 
-                        grâce à des processus logistiques rigoureux pour répondre aux exigences de délais, de disponibilité et de qualité.
+                        grâce à des processus logistiques rigoureux pour répondre aux exigences de délais, de disponibilité et de qualité. Notre réseau mondial 
+                        de partenaires aériens nous permet d'offrir des solutions optimales pour tous types de marchandises, des plus standards aux plus sensibles.
                     </p>
                     <p class="mb-20">
-                        En tant qu'agent de frêt aérien, nous fournissons un service multimodal de transport de fret et des services d'expédition fiables 
-                        et engagés pour tous types de marchandises.
+                        En tant qu'agent de frêt aérien expérimenté, nous fournissons un service multimodal de transport de fret et des services d'expédition fiables 
+                        et engagés pour tous types de marchandises. La rapidité est notre maître-mot dans le fret aérien. Nous livrons vos marchandises avec 
+                        une efficacité maximale, respectant les délais les plus serrés, tout en assurant une traçabilité complète de vos expéditions du point 
+                        d'origine jusqu'à la destination finale.
                     </p>
                     <div class="my-4">
                         <h4 class="mb-3">Nos Solutions Aériennes</h4>
@@ -615,6 +652,124 @@
                             <li><i class="far fa-check-double"></i>Vol charter</li>
                             <li><i class="far fa-check-double"></i>Consolidations et suivi</li>
                             <li><i class="far fa-check-double"></i>Assurance transport</li>
+                            <li><i class="far fa-check-double"></i>Express air service (colis et petits paquets)</li>
+                            <li><i class="far fa-check-double"></i>Gestion des marchandises sensibles et périssables</li>
+                            <li><i class="far fa-check-double"></i>Suivi en temps réel des expéditions</li>
+                            <li><i class="far fa-check-double"></i>Transport de marchandises dangereuses</li>
+                            <li><i class="far fa-check-double"></i>Solutions pour produits pharmaceutiques</li>
+                            <li><i class="far fa-check-double"></i>Transport de valeurs et objets de haute valeur</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Nos Engagements</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Délais de livraison optimisés</li>
+                            <li><i class="far fa-check-double"></i>Sécurité maximale des marchandises</li>
+                            <li><i class="far fa-check-double"></i>Solutions sur mesure selon vos besoins</li>
+                            <li><i class="far fa-check-double"></i>Expertise dans les formalités douanières</li>
+                            <li><i class="far fa-check-double"></i>Service client réactif et disponible</li>
+                            <li><i class="far fa-check-double"></i>Transparence totale des coûts</li>
+                            <li><i class="far fa-check-double"></i>Respect des normes environnementales</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Nos Avantages Compétitifs</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Partenariats privilégiés avec les principales compagnies aériennes</li>
+                            <li><i class="far fa-check-double"></i>Capacité de réservation garantie même en haute saison</li>
+                            <li><i class="far fa-check-double"></i>Équipe dédiée au fret aérien</li>
+                            <li><i class="far fa-check-double"></i>Connaissance approfondie des réglementations IATA</li>
+                            <li><i class="far fa-check-double"></i>Solutions d'urgence et prioritaires disponibles</li>
+                            <li><i class="far fa-check-double"></i>Plateforme digitale de suivi des expéditions</li>
+                        </ul>
+                    </div>
+                `
+            },
+            maritime: {
+                title: "Fret Maritime",
+                content: `
+                    <h3 class="mb-20">Fret Maritime</h3>
+                    <p class="mb-20">
+                        MLC propose des solutions complètes de fret maritime pour tous vos besoins d'importation et d'exportation. Avec des partenariats 
+                        stratégiques et une gestion minutieuse, notre service de fret maritime assure la sécurité et la ponctualité de vos expéditions 
+                        à travers les océans.
+                    </p>
+                    <p class="mb-20">
+                        Nous offrons des services de transport maritime conteneurisé (FCL) et de groupage (LCL), ainsi que des solutions pour le 
+                        transport de marchandises hors gabarit. Notre équipe d'experts vous accompagne à chaque étape, de la planification à la livraison finale.
+                    </p>
+                    <div class="my-4">
+                        <h4 class="mb-3">Nos Services Maritimes</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Transport maritime conteneurisé (FCL)</li>
+                            <li><i class="far fa-check-double"></i>Groupage maritime (LCL)</li>
+                            <li><i class="far fa-check-double"></i>Transport de marchandises hors gabarit</li>
+                            <li><i class="far fa-check-double"></i>Affrètement de navires</li>
+                            <li><i class="far fa-check-double"></i>Gestion des documents d'expédition</li>
+                            <li><i class="far fa-check-double"></i>Suivi des expéditions en temps réel</li>
+                            <li><i class="far fa-check-double"></i>Assurance maritime</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Nos Atouts</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Partenariats avec les principales compagnies maritimes</li>
+                            <li><i class="far fa-check-double"></i>Expertise dans les formalités douanières</li>
+                            <li><i class="far fa-check-double"></i>Solutions logistiques intégrées</li>
+                            <li><i class="far fa-check-double"></i>Gestion des conteneurs</li>
+                            <li><i class="far fa-check-double"></i>Service personnalisé selon vos besoins</li>
+                        </ul>
+                    </div>
+                `
+            },
+            ferroviaire: {
+                title: "Transport Ferroviaire",
+                content: `
+                    <h3 class="mb-20">Transport Ferroviaire</h3>
+                    <p class="mb-20">
+                        MLC vous assure un service complet de solutions de transport ferroviaire de bout en bout. Notre expertise dans ce domaine 
+                        nous permet d'offrir des services fiables et efficaces pour le transport de marchandises sur de longues distances. Nous travaillons 
+                        en étroite collaboration avec les opérateurs ferroviaires pour garantir des services de qualité et optimiser les délais de transit.
+                    </p>
+                    <p class="mb-20">
+                        Le transport ferroviaire est une solution économique et écologique pour le transport de grandes quantités de marchandises. 
+                        Nous proposons des services réguliers sur les principaux corridors ferroviaires d'Afrique Centrale, avec une attention 
+                        particulière à la sécurité et à la ponctualité. Notre expertise logistique nous permet d'intégrer parfaitement le transport 
+                        ferroviaire dans votre chaîne d'approvisionnement multimodale.
+                    </p>
+                    <div class="my-4">
+                        <h4 class="mb-3">Nos Services Ferroviaires</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Transport de conteneurs</li>
+                            <li><i class="far fa-check-double"></i>Transport de vrac</li>
+                            <li><i class="far fa-check-double"></i>Transport de marchandises générales</li>
+                            <li><i class="far fa-check-double"></i>Transport de produits dangereux</li>
+                            <li><i class="far fa-check-double"></i>Affrètement de wagons complets</li>
+                            <li><i class="far fa-check-double"></i>Services de groupage ferroviaire</li>
+                            <li><i class="far fa-check-double"></i>Gestion des terminaux ferroviaires</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Nos Avantages</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Transport de grandes quantités</li>
+                            <li><i class="far fa-check-double"></i>Solution économique et écologique</li>
+                            <li><i class="far fa-check-double"></i>Services réguliers et fiables</li>
+                            <li><i class="far fa-check-double"></i>Sécurité optimale des marchandises</li>
+                            <li><i class="far fa-check-double"></i>Intégration avec d'autres modes de transport</li>
+                            <li><i class="far fa-check-double"></i>Suivi en temps réel</li>
+                            <li><i class="far fa-check-double"></i>Réduction de l'empreinte carbone</li>
+                            <li><i class="far fa-check-double"></i>Capacité de transport importante</li>
+                            <li><i class="far fa-check-double"></i>Moins affecté par les conditions météorologiques</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Corridors Desservis</h4>
+                        <ul class="list">
+                            <li><i class="far fa-train"></i>Pointe-Noire - Brazzaville (CFCO)</li>
+                            <li><i class="far fa-train"></i>Corridor Nord-Sud (via connexions)</li>
+                            <li><i class="far fa-train"></i>Connexions avec les réseaux ferroviaires des pays limitrophes</li>
+                            <li><i class="far fa-train"></i>Autres corridors ferroviaires d'Afrique Centrale</li>
                         </ul>
                     </div>
                 `
@@ -629,8 +784,9 @@
                         de réglementation et d'optimisation des coûts liés à ces transports exceptionnels.
                     </p>
                     <p class="mb-20">
-                        Notre service peut être personnalisé pour répondre aux exigences spécifiques de chaque client. Nous proposons un package sur mesure 
-                        unique adapté à chaque projet.
+                        Spécialisés dans la logistique de projets industriels clés en main, nous mettons à disposition notre savoir-faire pour accompagner 
+                        les acteurs industriels dans la réussite de leurs projets les plus complexes. Notre expertise couvre l'ensemble de la chaîne logistique, 
+                        de l'étude préliminaire à la livraison finale sur site.
                     </p>
                     <div class="my-4">
                         <h4 class="mb-3">Solutions Spécialisées</h4>
@@ -641,6 +797,30 @@
                             <li><i class="far fa-check-double"></i>Transport fluvial sur barge</li>
                             <li><i class="far fa-check-double"></i>Charters aériens</li>
                             <li><i class="far fa-check-double"></i>Affrètement bateaux et avions</li>
+                            <li><i class="far fa-check-double"></i>Études techniques et rapports opérationnels</li>
+                            <li><i class="far fa-check-double"></i>Audits routiers et études de faisabilité</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Notre Expertise</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Gestion de projets industriels complexes</li>
+                            <li><i class="far fa-check-double"></i>Coordination multimodale</li>
+                            <li><i class="far fa-check-double"></i>Équipements spécialisés pour charges lourdes</li>
+                            <li><i class="far fa-check-double"></i>Équipe dédiée aux projets spéciaux</li>
+                            <li><i class="far fa-check-double"></i>Planification logistique détaillée</li>
+                            <li><i class="far fa-check-double"></i>Suivi en temps réel des opérations</li>
+                        </ul>
+                    </div>
+                    <div class="my-4">
+                        <h4 class="mb-3">Secteurs Desservis</h4>
+                        <ul class="list">
+                            <li><i class="far fa-check-double"></i>Pétrole et Gaz</li>
+                            <li><i class="far fa-check-double"></i>Mines</li>
+                            <li><i class="far fa-check-double"></i>Construction</li>
+                            <li><i class="far fa-check-double"></i>Énergie</li>
+                            <li><i class="far fa-check-double"></i>Infrastructures</li>
+                            <li><i class="far fa-check-double"></i>Industrie lourde</li>
                         </ul>
                     </div>
                 `
@@ -671,6 +851,9 @@
             document.getElementById('date').textContent = new Date().getFullYear();
         });
     </script>
+
+    <!-- Script pour inclure l'en-tête commun -->
+    <script src="assets/js/include-header-script.js"></script>
 
 </body>
 
