@@ -3815,7 +3815,7 @@ label {
 }
 
 .ts-bg{
-  background: var(--color-dark);
+  background: var(--color-gray);
 }
 
 .testimonial-area::before{
@@ -3887,7 +3887,7 @@ label {
 
 .testimonial-author-info h4 {
   font-size: 20px;
-  color: var(--color-white);
+  color: var(--color-dark);
 }
 
 .testimonial-author-info p {
