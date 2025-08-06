@@ -2402,7 +2402,7 @@ label {
 
 .sa-bg{
   position: relative;
-  background: var(--color-dark);
+  background: var(--color-gray);
   z-index: 1;
 }
 
